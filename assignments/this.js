@@ -15,7 +15,7 @@
 
 // Console is apart of browser api
 // Window global container
-console.log(this);
+// console.log(this);
 
 // Principle 2
 
@@ -27,16 +27,16 @@ const object = {
   }
 };
 
-console.log(object.someFunction());
+// console.log(object.someFunction());
 
 // Principle 3
 
 // code example for New Binding
 
 function PewPew(attributes) {
-  this.name = attributes.name,
-  this.opinion = attributes.opinion,
-  this.greet = attributes.greet
+  this.name = attributes.name;
+  this.opinion = attributes.opinion;
+  this.greet = attributes.greet;
 }
 
 PewPew.prototype.fire = function () {
@@ -49,7 +49,7 @@ const rifle = new PewPew({
   greet: "Reloads magazine"
 });
 
-console.log(rifle);
+// console.log(rifle);
 
 // Principle 4
 
@@ -61,4 +61,4 @@ const semi_rifle = new PewPew({
     greet: "Reloads magazine"
 });
 
-console.log(rifle.fire.call(semi_rifle));
+// console.log(rifle.fire.call(semi_rifle));
